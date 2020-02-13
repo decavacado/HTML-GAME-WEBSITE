@@ -6,6 +6,7 @@ app.use("/public", express.static('public'));
 app.use("/style", express.static("2048-master/style"));
 app.use("/js", express.static("2048-master/js"));
 app.use(express.static("clumsy-bird-master"))
+app.use("/assets", express.static("assets"))
 
 
 

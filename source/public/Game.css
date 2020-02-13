@@ -4,3 +4,7 @@ body {
 iframe {
 	align: center;
 }
+
+#image {
+	border-radius: 11%;
+}
