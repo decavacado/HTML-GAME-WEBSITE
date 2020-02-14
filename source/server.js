@@ -7,6 +7,8 @@ app.use("/style", express.static("2048-master/style"));
 app.use("/js", express.static("2048-master/js"));
 app.use(express.static("clumsy-bird-master"))
 app.use("/assets", express.static("assets"))
+app.use(express.static("mimstris-master/dist"));
+app.use(express.static("mimstris-master/src"));
 
 
 
@@ -24,6 +26,9 @@ app.get("/2048", function(req,res){
 })
 app.get("/fp", function(req,res){
 	res.sendFile(__dirname + "/clumsy-bird-master/index.html")
+})
+app.get("/mm", function(req,res){
+	res.sendFile(__dirname + "/mimstris-master/dist/index.html")
 })
 
 app.listen(process.env.PORT || 3000)

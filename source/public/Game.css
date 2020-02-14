@@ -1,5 +1,6 @@
 body {
 	background-color: #52bbef;
+	font-family: 'Hind Madurai';font-size: 22px;
 }
 iframe {
 	align: center;
@@ -7,4 +8,17 @@ iframe {
 
 #image {
 	border-radius: 11%;
+}
+.grid {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+}
+p {
+	font-size: 20px;
+}
+.center {
+	margin-left: 50px;
+}
+.oh {
+	font-size: 30px;
 }
