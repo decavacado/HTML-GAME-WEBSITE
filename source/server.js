@@ -9,6 +9,8 @@ app.use(express.static("clumsy-bird-master"))
 app.use("/assets", express.static("assets"))
 app.use(express.static("mimstris-master/dist"));
 app.use(express.static("mimstris-master/src"));
+app.use(express.static("canvas-tetris-master"))
+app.use(express.static("emoji"));
 
 
 
@@ -27,9 +29,16 @@ app.get("/2048", function(req,res){
 app.get("/fp", function(req,res){
 	res.sendFile(__dirname + "/clumsy-bird-master/index.html")
 })
-app.get("/mm", function(req,res){
-	res.sendFile(__dirname + "/mimstris-master/dist/index.html")
+app.get("/tet", function(req,res) {
+	res.sendFile(__dirname + "/canvas-tetris-master/index.html")
 })
+app.get("/mine", function(req,res){
+	res.sendFile(__dirname + "/emoji/index.html")
+})
+app.get("/work",function(req,res){
+	res.sendFile(__dirname + "/work.html")
+})
+
 
 app.listen(process.env.PORT || 3000)
 console.log("everthing is fine");
