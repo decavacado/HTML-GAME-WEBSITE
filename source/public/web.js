@@ -1,4 +1,4 @@
-const web = "localhost:3000";
+const web = "htmlgdec.herokuapp.com";
 
 function herf() {
 	window.location.href = `http://${web}/carrush`;
