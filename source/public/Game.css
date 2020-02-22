@@ -8,17 +8,20 @@ iframe {
 
 #image {
 	border-radius: 11%;
+	grid-gap: 1rem;
 }
 .grid {
 	display: grid;
 	grid-template-columns: auto auto auto auto;
+	grid-gap: 1rem;
+}
 }
 p {
-	font-size: 20px;
+	font-size: 25px;
 }
 .center {
 	margin-left: 50px;
-}
+}http://localhost:3000/assets/2048_logo.svg.png
 .oh {
 	font-size: 30px;
 }
@@ -32,4 +35,12 @@ p {
 	border-bottom-style: solid;
 	border-left-style: none;
 	border-color: red;
+}
+@media screen and (max-width: 600px) {
+	.grid{
+		grid-template-columns: repeat(1, 270px);
+	}
+	p {
+		display: none;
+	}
 }
